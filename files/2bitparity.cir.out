@@ -1,0 +1,34 @@
+* d:\esim\2bitparity\2bitparity.cir
+
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+* u1  net-_sc10-pad3_ net-_sc2-pad2_ net-_sc5-pad2_ net-_sc4-pad2_ net-_sc9-pad2_ net-_sc12-pad2_ net-_sc13-pad1_ net-_sc1-pad2_ port
+* s c m o d e
+xsc3 net-_sc1-pad1_ gnd net-_sc10-pad3_ ? sky130_fd_pr__pfet_01v8 W = 5.4 L = 0.18
+xsc7 net-_sc6-pad1_ gnd net-_sc10-pad3_ ? sky130_fd_pr__pfet_01v8 W = 5.4 L = 0.18
+xsc10 net-_sc10-pad1_ gnd net-_sc10-pad3_ ? sky130_fd_pr__pfet_01v8 W = 5.4 L = 0.18
+xsc13 net-_sc13-pad1_ gnd net-_sc10-pad3_ ? sky130_fd_pr__pfet_01v8 W = 5.4 L = 0.18
+xsc1 net-_sc1-pad1_ net-_sc1-pad2_ net-_sc1-pad3_ ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+xsc2 net-_sc1-pad3_ net-_sc2-pad2_ net-_sc2-pad3_ ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+xsc5 net-_sc2-pad3_ net-_sc5-pad2_ net-_sc4-pad1_ ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+xsc4 net-_sc4-pad1_ net-_sc4-pad2_ net-_sc1-pad1_ ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+xsc6 net-_sc6-pad1_ net-_sc1-pad1_ gnd ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+xsc8 net-_sc10-pad1_ net-_sc6-pad1_ ? ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+xsc9 ? net-_sc9-pad2_ net-_sc11-pad1_ ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+xsc11 net-_sc11-pad1_ net-_sc1-pad1_ net-_sc11-pad3_ ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+xsc12 net-_sc11-pad3_ net-_sc12-pad2_ net-_sc10-pad1_ ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+xsc14 net-_sc13-pad1_ net-_sc10-pad1_ gnd ? sky130_fd_pr__nfet_01v8 W = 5.4 L = 0.18
+.tran 15e-00 25e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end
