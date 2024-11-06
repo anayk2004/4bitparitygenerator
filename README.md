@@ -4,7 +4,7 @@ A 2-bit parity generator is a digital circuit designed to output a parity bit th
 Circuit Diagram:
 ![image](https://github.com/user-attachments/assets/700f30b7-2d64-470a-b991-23c9bdc205cf)
 
-##Parameters:
+Parameters:
 
 Case 1: Channel Width (W) = 20.35, Channel Length (L) = 0.165
 ![image](https://github.com/user-attachments/assets/79f43caa-a8b5-4e9c-b7f3-c619dae8b33b)
