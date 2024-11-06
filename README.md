@@ -19,7 +19,7 @@ Case 3: Channel Width (W) = 5.4, Channel Length (L) = 0.18
 
 ## Acknowledgement
 
-* Inderjit Singh Dhanjal,Assistant Professor,K.J.Somaiya College of Engineering
+* Inderjit Singh Dhanjal, Assistant Professor, K.J.Somaiya College of Engineering
 
 * Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 
@@ -27,7 +27,7 @@ Case 3: Channel Width (W) = 5.4, Channel Length (L) = 0.18
 
 * Anay Khanolkar, Department of ELectronics and Computer Engineering, K.J. Somaiya College of Engineering - [anay.khanolkar@somaiya.edu](url)
   
-* Inderjit Singh Dhanjal,Assistant Professor,K.J.Somaiya College of Engineering - [inderjitsingh@somaiya.edu](url)
+* Inderjit Singh Dhanjal, Assistant Professor, K.J.Somaiya College of Engineering - [inderjitsingh@somaiya.edu](url)
   
 * Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. - [[kunalghosh@gmail.com]](url)(mailto:kunalghosh@gmail.com)
 
